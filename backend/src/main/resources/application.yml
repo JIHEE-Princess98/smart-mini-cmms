@@ -1,0 +1,15 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/smart_mini_cmms
+    username: postgres
+    password: kim573071!
+    driver-class-name: org.postgresql.Driver
+
+mybatis:
+  mapper-locations: classpath:/mapper/**/*.xml
+  type-aliases-package: com.smartfactory.cmms
+  configuration:
+    map-underscore-to-camel-case: true
